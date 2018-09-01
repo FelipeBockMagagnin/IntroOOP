@@ -50,10 +50,8 @@ public class Folha {
         z++;
     }
     
-    void listarFormas(){
-        
-        System.out.println("*************************************************************");
-        
+    void resumo(){
+        System.out.println("*************************************************************");        
         System.out.println("Total de formas: " + (numeroTriangulos + numeroRetangulos + numeroCirculos));       
         System.out.println("Total de Triangulos: " + numeroTriangulos);
         System.out.println("Total de Circulos: " + numeroCirculos);
@@ -63,7 +61,10 @@ public class Folha {
         System.out.println("Largura da folha: " + this.largura);
         
         System.out.println("*************************************************************");
-        
+    }
+    
+    void listarFormas(){       
+    
         for(int c = 0; c < numeroCirculos; c++){
             System.out.println("Area do Circulo: " + listaCirculo[c].area());
             System.out.println("Perimetro do Circulo: " + listaCirculo[c].perimetro());
@@ -102,19 +103,46 @@ public class Folha {
         for(int c = 0; c < z; c++){            
             for(int k = 0; k < numeroCirculos; k++){
                 if(listaCirculo[k].z == c){
+                    System.out.println("*************************************************************");
                     System.out.println("O elemento " + (c+1) + " é um circulo");
+                    System.out.println("Area do Circulo: " + listaCirculo[k].area());
+                    System.out.println("Perimetro do Circulo: " + listaCirculo[k].perimetro());
+                    System.out.println("Raio do circulo: " + listaCirculo[k].raio);
+                    System.out.println("Z: " + listaCirculo[k].z);
+                    System.out.println("Posição x: " + listaCirculo[k].x);
+                    System.out.println("Posição y: " + listaCirculo[k].y);
+                    System.out.println("*************************************************************");
                 }   
             } 
               
             for(int k = 0; k < numeroRetangulos; k++){
                 if(listaRetangulo[k].z == c){
+                    System.out.println("*************************************************************");
                     System.out.println("O elemento " + (c+1) + " é um retangulo");
+                    System.out.println("Area do retangulo: " + listaRetangulo[k].area());
+                    System.out.println("Perimetro do retangulo: " + listaRetangulo[k].perimetro());
+                    System.out.println("Altura do retangulo: " + listaRetangulo[k].altura);
+                    System.out.println("Largura do retangulo: " + listaRetangulo[k].largura);   
+                    System.out.println("Z: " + listaRetangulo[k].z);
+                    System.out.println("Posição x: " + listaRetangulo[k].x);
+                    System.out.println("Posição y: " + listaRetangulo[k].y);
+                    System.out.println("*************************************************************");
                 }
             }
             
             for(int k = 0; k < numeroTriangulos; k++){
                 if(listaTriangulo[k].z == c){
+                    System.out.println("*************************************************************");
                     System.out.println("O elemento " + (c+1) + " é um triangulo");
+                    System.out.println("Altura do triangulo: " + listaTriangulo[k].altura);
+                    System.out.println("Largura do triangulo: " + listaTriangulo[k].largura);
+                    System.out.println("Area do triangulo: " + listaTriangulo[k].area());
+                    System.out.println("Perimetro do triangulo: " + listaTriangulo[k].perimetro());
+                    System.out.println("Cor do triangulo: " + listaTriangulo[k].cor);
+                    System.out.println("Z: " + listaTriangulo[k].z);
+                    System.out.println("Posição x: " + listaTriangulo[k].x);
+                    System.out.println("Posição y: " + listaTriangulo[k].y);
+                    System.out.println("*************************************************************");
                 }                
             } 
         }

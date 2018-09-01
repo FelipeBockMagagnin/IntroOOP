@@ -16,8 +16,10 @@ public class Circulo {
     
     double x=0,y=0;
     
-    Circulo(double raio){
+    Circulo(double raio, double x, double y){
         this.raio = raio;
+        this.x = x;
+        this.y = y;
     }
     
     double area(){

@@ -23,6 +23,10 @@ public class Triangulo {
     return altura*largura/2.0;
   }
   
+  double perimetro(){
+      return altura + largura + Math.sqrt(Math.pow(altura, 2) + Math.pow(largura,2));
+  }
+  
   void pintar(String novaCor) {
     cor = novaCor;
     System.out.println("pintando o triangulo de " + cor);
@@ -31,13 +35,13 @@ public class Triangulo {
   // CONSTRUTOR da classe:
   // define o método inicializador da classe, ou seja, o código que vai ser
   // executado ao chamar o new.
-  Triangulo(double altura, double largura, String cor) {
+  Triangulo(double altura, double largura, String cor, double x, double y) {
     this.altura = altura;
     this.largura = largura;
     this.cor = cor;
+    this.x = x;
+    this.y = y;
   }
   
-  double perimetro(){
-      return altura + largura + Math.sqrt(Math.pow(altura, 2) + Math.pow(largura,2));
-  }
+  
 }

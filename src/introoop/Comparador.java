@@ -11,10 +11,6 @@ package introoop;
  */
 public class Comparador {
   
-  Comparador() {
-    tris = new Triangulo[10];
-  }
-  
   //se ret maior retorna true
   boolean maiorAreaRetTri(Retangulo ret, Triangulo tri) {
       return ret.area() > tri.area();
@@ -44,8 +40,5 @@ public class Comparador {
   boolean maiorPerimetroRetTri (Retangulo ret, Triangulo tri){
       return ret.perimetro() > tri.perimetro();
   } 
-   
-  
-  Triangulo[] tris;
 }
 

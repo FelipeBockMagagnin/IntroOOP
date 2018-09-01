@@ -36,9 +36,11 @@ public class Retangulo {
       return (altura*2) + (largura * 2);
   }
   
-  Retangulo(double altura, double largura) {
+  Retangulo(double altura, double largura, double x, double y) {
     this.largura = largura;
     this.altura = altura;
+    this.x = x;
+    this.y = y;
   }
   
 }
