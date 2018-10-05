@@ -19,8 +19,12 @@ public class Folha {
     
     int z = 0;
     
-    
-    Folha(double altura, double largura){
+    /**
+     * 
+     * @param altura
+     * @param largura 
+     */
+    public Folha(double altura, double largura){
         this.altura = altura;
         this.largura = largura;
         
@@ -29,28 +33,47 @@ public class Folha {
         listaCirculo = new Circulo[10];
     }
     
-    void adicionarTriangulo(Triangulo tri){
+    /**
+     * adiciona um triangulo na folha
+     * 
+     * @param tri 
+     */
+    public void adicionarTriangulo(Triangulo tri){
         listaTriangulo[numeroTriangulos] = tri;
         numeroTriangulos++;
         tri.z = this.z;
         z++;
     }
     
-    void adicionarRetangulo(Retangulo ret){
+    /**
+     * adiciona um retangulo na folha
+     * 
+     * @param ret 
+     */
+    public void adicionarRetangulo(Retangulo ret){
         listaRetangulo[numeroRetangulos] = ret;
         numeroRetangulos++; 
         ret.z = this.z;
         z++;
     }
     
-    void adicionarCirculo (Circulo cir){
+    /**
+     * adiciona um circulo na folha
+     * 
+     * @param cir 
+     */
+    public void adicionarCirculo (Circulo cir){
         listaCirculo[numeroCirculos] = cir;
         numeroCirculos++;
         cir.z = this.z;
         z++;
     }
     
-    void resumo(){
+    /**
+     * escreve um resumo das formas que foram postas na folha
+     * 
+     */
+    public void resumo(){
         System.out.println("*************************************************************");        
         System.out.println("Total de formas: " + (numeroTriangulos + numeroRetangulos + numeroCirculos));       
         System.out.println("Total de Triangulos: " + numeroTriangulos);
@@ -63,7 +86,10 @@ public class Folha {
         System.out.println("*************************************************************");
     }
     
-    void listarFormas(){       
+    /**
+     * lista as formas em ordem cronologica 
+     */
+    public void listarFormas(){       
     
         for(int c = 0; c < numeroCirculos; c++){
             System.out.println("Area do Circulo: " + listaCirculo[c].area());
@@ -99,7 +125,10 @@ public class Folha {
         }        
     }
     
-    void listarOrdenado(){        
+    /**
+     * lista as formas de acordo com seu z
+     */
+    public void listarOrdenado(){        
         for(int c = 0; c < z; c++){            
             for(int k = 0; k < numeroCirculos; k++){
                 if(listaCirculo[k].z == c){

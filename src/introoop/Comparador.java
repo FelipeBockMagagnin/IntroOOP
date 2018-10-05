@@ -9,35 +9,65 @@ package introoop;
  *
  * @author Felpi
  */
-public class Comparador {
-  
-  //se ret maior retorna true
-  boolean maiorAreaRetTri(Retangulo ret, Triangulo tri) {
+public class Comparador {  
+    
+  /** 
+   * 
+   * @param ret
+   * @param tri
+   * @return se ret maior retorna true
+   */  
+  public boolean maiorAreaRetTri(Retangulo ret, Triangulo tri) {
       return ret.area() > tri.area();
   }
   
-  //se tri maior retorna true
-  boolean maiorAreaTriCir (Triangulo tri, Circulo cir){
+  /**
+   * 
+   * @param tri
+   * @param cir
+   * @return se tri maior retorna true
+   */
+  public boolean maiorAreaTriCir (Triangulo tri, Circulo cir){
       return tri.area() > cir.area();
   } 
   
-  //se ret maior retorna true
-  boolean maiorAreaRetCir (Retangulo ret, Circulo cir){
+  /**
+   * 
+   * @param ret
+   * @param cir
+   * @return se ret maior retorna true 
+   */
+  public boolean maiorAreaRetCir (Retangulo ret, Circulo cir){
       return ret.area() > cir.area();
   } 
   
-  //se ret maior retorna true
-  boolean maiorPerimetroRetCir (Retangulo ret, Circulo cir){
+  /**
+   * 
+   * @param ret
+   * @param cir
+   * @return se ret maior retorna true 
+   */
+  public boolean maiorPerimetroRetCir (Retangulo ret, Circulo cir){
       return ret.perimetro() > cir.perimetro();
   } 
   
-  //se tri maior retorna true
-  boolean maiorPerimetroTriCir (Triangulo tri, Circulo cir){
+  /**
+   * 
+   * @param tri
+   * @param cir
+   * @return se tri maior retorna true
+   */
+  public boolean maiorPerimetroTriCir (Triangulo tri, Circulo cir){
       return tri.perimetro() > cir.perimetro();
   } 
   
-  //se ret maior retorna true
-  boolean maiorPerimetroRetTri (Retangulo ret, Triangulo tri){
+  /**
+   * 
+   * @param ret
+   * @param tri
+   * @return se ret maior retorna true
+   */
+  public boolean maiorPerimetroRetTri (Retangulo ret, Triangulo tri){
       return ret.perimetro() > tri.perimetro();
   } 
 }

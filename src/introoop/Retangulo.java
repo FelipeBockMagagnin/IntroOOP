@@ -17,26 +17,32 @@ public class Retangulo {
   
   int z = 0;
   
-  double x=0,y=0;
+  double x=0,y=0;  
   
-  // DECLARAÇÃO dos métodos:
-  /* descreve a assinatura dos métodos (como os programadores devem usar
-   * objetos dessa classe.
-   * e DEFINIÇÃO dos métodos:
-   * descreve como os métodos são implementados.
+  /**
+   * 
+   * @return area do retangulo
    */
-  
-  
-  
-  double area() {
+  public double area() {
     return altura*largura;
   }
   
-  double perimetro(){
+  /**
+   * 
+   * @return area do perimetro 
+   */
+  public double perimetro(){
       return (altura*2) + (largura * 2);
   }
   
-  Retangulo(double altura, double largura, double x, double y) {
+  /**
+   * 
+   * @param altura
+   * @param largura
+   * @param x
+   * @param y 
+   */
+  public Retangulo(double altura, double largura, double x, double y) {
     this.largura = largura;
     this.altura = altura;
     this.x = x;

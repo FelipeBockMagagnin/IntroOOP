@@ -16,17 +16,31 @@ public class Circulo {
     
     double x=0,y=0;
     
-    Circulo(double raio, double x, double y){
+    /**
+     * 
+     * @param raio
+     * @param x
+     * @param y 
+     */
+    public Circulo(double raio, double x, double y){
         this.raio = raio;
         this.x = x;
         this.y = y;
     }
     
-    double area(){
+    /**
+     * 
+     * @return area do circulo
+     */
+    public double area(){
         return raio * raio * 3.14159265359;
     }
     
-    double perimetro(){
+    /**
+     * 
+     * @return perimetro do circulo
+     */
+    public double perimetro(){
         return 2 * raio * 3.14159265359;
     }
     

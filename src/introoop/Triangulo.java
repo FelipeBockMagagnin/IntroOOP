@@ -6,36 +6,53 @@
 package introoop;
 
 /**
- *
+ * 
  * @author Felpi
  */
-public class Triangulo {
-  // atributos
+public class Triangulo { 
+    
   double altura;
   double largura;
-  String cor;
-  
-  int z = 0;
-  
+  String cor;  
+  int z = 0;  
   double x=0,y=0;
   
-  double area() {
+  
+  /**
+   *  
+   * @return a area do triangulo 
+   */
+  public double area() {
     return altura*largura/2.0;
   }
   
-  double perimetro(){
+  /**
+   * 
+   * @return o perimetro do triangulo 
+   */
+  public double perimetro(){
       return altura + largura + Math.sqrt(Math.pow(altura, 2) + Math.pow(largura,2));
   }
   
-  void pintar(String novaCor) {
+  /**
+   * pinta o triangulo de alguma cor
+   * 
+   * @param novaCor 
+   */
+  public void pintar(String novaCor) {
     cor = novaCor;
     System.out.println("pintando o triangulo de " + cor);
   }
   
-  // CONSTRUTOR da classe:
-  // define o método inicializador da classe, ou seja, o código que vai ser
-  // executado ao chamar o new.
-  Triangulo(double altura, double largura, String cor, double x, double y) {
+  /**
+   * 
+   * @param altura
+   * @param largura
+   * @param cor
+   * @param x
+   * @param y 
+   */
+  public Triangulo(double altura, double largura, String cor, double x, double y) {
     this.altura = altura;
     this.largura = largura;
     this.cor = cor;
